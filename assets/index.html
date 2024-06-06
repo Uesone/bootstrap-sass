@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/dist/css/style.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="assets/img/logo.jpg" alt="" class="rounded-circle" style="width: 5rem" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Saldi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Welcome Summer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Last Minute</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recensioni</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca posti da sogno" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="bg-light p-5 my-5 text-secondary text-md-center text-lg-start shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+          <div class="d-flex align-items-center justify-content-lg-start justify-content-md-center">
+            <h1 class="display-1 text-epicode-1">Eveline-R</h1>
+            <span>---Feel the Freedom</span>
+          </div>
+          <hr class="" />
+          <p class="fs-3 fst-italic text-epicode-3">Scopri le destinazioni più calde del momento!</p>
+          <button class="btn bg-info bg-epicode-2 text-white px-5 fw-bold mt-3">Prenota ora</button>
+        </div>
+
+        <!-- *******************SALDI***************************************************** -->
+
+        <div class="my-5">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2>Saldi</h2>
+            <a class="btn text-primary text-epicode-2" data-bs-toggle="collapse" href="#collapseSaldi">Nascondi sezione</a>
+          </div>
+          <div class="collapse show row gx-lg-5" id="collapseSaldi">
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card border-6 border border-info overflow-hidden">
+                <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn bg-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card border-6 border border-info overflow-hidden">
+                <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn bg-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <div class="card border-6 border border-info overflow-hidden">
+                <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn bg-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 d-md-none col-lg-3 d-lg-inline">
+              <div class="card border-6 border border-info overflow-hidden">
+                <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn bg-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ********************Summer******************************** -->
+
+        <div id="summerContainer">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2>Welcome Summer</h2>
+            <a class="btn text-primary text-epicode-2" data-bs-toggle="collapse" href="#collapseSummer">Nascondi sezione</a>
+          </div>
+          <div class="collapse show row gx-4 gy-4 mb-5" id="collapseSummer">
+            <div class="col-6 col-md-6 col-lg-4">
+              <div class="card shadow overflow-hidden" onclick="hot(event)">
+                <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+                <span class="d-none btn btn-danger position-absolute top-0 end-0 mt-2 me-2 px-2 badge fw-bold">HOT</span>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn bg-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4">
+              <div class="card shadow overflow-hidden" onclick="hot(event)">
+                <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+                <span class="d-none btn btn-danger position-absolute top-0 end-0 mt-2 me-2 px-2 badge fw-bold">HOT</span>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn bg-info">Prenota</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4" ">
+            <div class="card shadow overflow-hidden" onclick="hot(event)">
+              <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+              <span class="d-none btn btn-danger position-absolute top-0 end-0 mt-2 me-2 px-2 badge fw-bold">HOT</span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn bg-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="card shadow overflow-hidden" onclick="hot(event)">
+              <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+              <span class="d-none btn btn-danger position-absolute top-0 end-0 mt-2 me-2 px-2 badge fw-bold">HOT</span>
+
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn bg-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="card shadow overflow-hidden" onclick="hot(event)">
+              <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+              <span class="d-none btn btn-danger position-absolute top-0 end-0 mt-2 me-2 px-2 badge fw-bold">HOT</span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn bg-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="card shadow overflow-hidden" onclick="hot(event)">
+              <img src="assets/img/sogno.jpg" class="card-img-top" alt="sogno" />
+              <span class="d-none btn btn-danger position-absolute top-0 end-0 mt-2 me-2 px-2 badge fw-bold">HOT</span>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn bg-info">Prenota</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- *******************************Offerte*********************************************** -->
+      <div>
+        <h2 class="mb-2">Offerta del giorno</h2>
+        <div class="row">
+          <div class="col-6 col-lg-8"><img src="assets/img/sogno.jpg" alt="sogno" class="object-fit-cover w-100 shadow border-10 border border-info" /></div>
+          <div class="col-6 col-lg-4">
+            <h3 class="display-3">
+              Fushifaru <br />
+              Madives
+            </h3>
+            <span class="fs-7 text-secondary fw-bold">15.01.2021-31.01.2021</span>
+            <p class="fs-5 text-secondary mt-4">Ville a partire da 500$, <br />non fartele sfuggire!</p>
+            <button class="bg-dark text-white rounded-pill fw-bold">best offer</button>
+          </div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-4">Last minute</h2>
+        <div class="row gy-4">
+          <div class="col-6 col-md-4 col-lg-2"><img src="assets/img/sogno.jpg" alt="sogno" class="object-fit-cover w-100 shadow" /></div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="assets/img/sogno.jpg" alt="sogno" class="object-fit-cover w-100 shadow" /></div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="assets/img/sogno.jpg" alt="sogno" class="object-fit-cover w-100 shadow" /></div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="assets/img/sogno.jpg" alt="sogno" class="object-fit-cover w-100 shadow" /></div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="assets/img/sogno.jpg" alt="sogno" class="object-fit-cover w-100 shadow" /></div>
+          <div class="col-6 col-md-4 col-lg-2"><img src="assets/img/sogno.jpg" alt="sogno" class="object-fit-cover w-100 shadow" /></div>
+        </div>
+      </div>
+      <div class="my-5">
+        <h2 class="mb-4 text-center">Dicono di noi</h2>
+        <div class="row my-3 align-items-center">
+          <div class="col-2">
+            <img src="assets/img/user.jpg" alt="user-img" class="object-fit-cover w-100" />
+          </div>
+          <div class="col-10">
+            <h3>Username</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente molestiae at. Amet similique sapiente laudantium quidem maiores ab ad ex quas cupiditate,
+              sint quos vel expedita! Voluptatibus, excepturi esse? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente molestiae at. Amet similique sapiente
+              laudantium quidem maiores ab ad ex quas cupiditate, sint quos vel expedita! Voluptatibus, excepturi esse?
+            </p>
+          </div>
+        </div>
+        <div class="row my-3 align-items-center">
+          <div class="col-2">
+            <img src="assets/img/user.jpg" alt="user-img" class="object-fit-cover w-100" />
+          </div>
+          <div class="col-10">
+            <h3>Username</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente molestiae at. Amet similique sapiente laudantium quidem maiores ab ad ex quas cupiditate,
+              sint quos vel expedita! Voluptatibus, excepturi esse? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente molestiae at. Amet similique sapiente
+              laudantium quidem maiores ab ad ex quas cupiditate, sint quos vel expedita! Voluptatibus, excepturi esse?
+            </p>
+          </div>
+        </div>
+        <div class="row my-3 align-items-center">
+          <div class="col-2">
+            <img src="assets/img/user.jpg" alt="user-img" class="object-fit-cover w-100" />
+          </div>
+          <div class="col-10">
+            <h3>Username</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente molestiae at. Amet similique sapiente laudantium quidem maiores ab ad ex quas cupiditate,
+              sint quos vel expedita! Voluptatibus, excepturi esse? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente molestiae at. Amet similique sapiente
+              laudantium quidem maiores ab ad ex quas cupiditate, sint quos vel expedita! Voluptatibus, excepturi esse?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark">
+      <div class="container text-white text-center">
+        <div class="p-5">
+          <button class="btn btn-outline-secondary px-3 mb-3 fw-bold" data-bs-toggle="modal" data-bs-target="#contattaciModal" data-bs-whatever="@mdo">Contattaci</button>
+          <p class="fs-10">© 2021 Kalina Travel LTD. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+    <!-- **********************************************modale contattaci*************************************************** -->
+    <div class="modal fade" id="contattaciModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="NomeCognome@gmali.com" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="viaggi.js"></script>
+  </body>
+</html>
